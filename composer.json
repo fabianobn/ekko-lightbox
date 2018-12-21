@@ -20,12 +20,8 @@
         "issues": "https://github.com/ashleydw/lightbox/issues"
     },
     "license": "MIT",
-    "type": "component",
-    "require": {
-        "robloach/component-installer": "*"
-    },
     "extra": {
-        "component": {
+        "vendor": {
             "scripts": [
                 "dist/ekko-lightbox.js",
                 "dist/ekko-lightbox.min.js"
