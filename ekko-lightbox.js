@@ -113,11 +113,11 @@ const Lightbox = (($) => {
 				if (this._config.showArrows && this._$galleryItems.length > 1) {
 					this._$lightboxContainer.append(`<div class="ekko-lightbox-nav-overlay"><a href="#">${this._config.leftArrow}</a><a href="#">${this._config.rightArrow}</a></div>`)
 					this._$modalArrows = this._$lightboxContainer.find('div.ekko-lightbox-nav-overlay').first()
-					this._$lightboxContainer.on('click', 'a:first-child', event => {
+					this._$modalArrows.on('click', 'a:first-child', event => {
 						event.preventDefault()
 						return this.navigateLeft()
 					})
-					this._$lightboxContainer.on('click', 'a:last-child', event => {
+					this._$modalArrows.on('click', 'a:last-child', event => {
 						event.preventDefault()
 						return this.navigateRight()
 					})
